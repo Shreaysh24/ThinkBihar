@@ -8,7 +8,7 @@ export default function Navbar() {
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
-    { href: '/what-we-do', label: 'What We Do' },
+    
     { href: '/programs', label: 'Programs' },
     { href: '/publications', label: 'Publications' },
     { href: '/get-involved', label: 'Get Involved' },
@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="text-2xl font-bold text-primary">
-              ThinkBihar
+              <img src="/logo.png" width={58} className='rounded-3xl' />
             </Link>
           </div>
 

@@ -1,111 +1,107 @@
+"use client";
+
 export default function About() {
   return (
-    <div className="py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="py-20 bg-gradient-to-b from-white to-gray-50 font-[Noto_Serif_Devanagari]">
+      <div className="max-w-6xl mx-auto px-6 md:px-12">
+
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 mb-6">About ThinkBihar</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Empowering Bihar through education, research, and community development
+        <div className="text-center mb-20">
+          <h1 className="text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
+            थिंक बिहार रिसर्च फाउंडेशन
+          </h1>
+          <p className="text-2xl text-gray-700 font-medium max-w-3xl mx-auto leading-relaxed">
+            “Think and Act for Bihar” — बिहार की गरिमा और विकास की पुनर्स्थापना की दिशा में एक सशक्त पहल।
           </p>
         </div>
 
-        {/* Mission Section */}
-        <div className="mb-16">
-          <div className="card">
-            <h2 className="text-3xl font-bold text-primary mb-6">Our Mission</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              To strengthen education and research ecosystems across Bihar by connecting grassroots initiatives 
-              with advanced research, providing training and internships, and fostering inclusive social, 
-              cultural, and economic development.
+        {/* Introduction */}
+        <section className="mb-20 bg-white rounded-3xl shadow-md p-10 border-l-4 border-primary">
+          <h2 className="text-3xl font-bold text-primary mb-8 border-b pb-2">
+            परिचय
+          </h2>
+          <div className="space-y-6 text-lg text-gray-800 leading-relaxed">
+            <p>
+              <strong>थिंक बिहार रिसर्च फाउंडेशन, पटना</strong> एक गैर-सरकारी एवं गैर-लाभकारी संस्था है, 
+              जिसकी स्थापना <strong>19 अगस्त 2025</strong> को की गई। यह संस्था 
+              <strong>कंपनी अधिनियम 2013 (धारा 8)</strong> के अंतर्गत पंजीकृत है।
+            </p>
+            <p>
+              इसका उद्देश्य बिहार की गरिमा को पुनर्स्थापित करना और “विकसित बिहार” की संकल्पना को साकार करना है।
+              भारत के विकास में बिहार की भूमिका ऐतिहासिक रूप से अत्यंत महत्वपूर्ण रही है।
+              यह भूमि ज्ञान-विज्ञान, संस्कृति और सभ्यता की जननी रही है।
+            </p>
+            <p>
+              नालंदा और विक्रमशिला जैसे विश्वविख्यात विश्वविद्यालयों से लेकर
+              लिच्छवी गणराज्य, मौर्य साम्राज्य, बुद्ध, महावीर और गांधी तक — 
+              यह भूमि सदैव नेतृत्व और परिवर्तन का केंद्र रही है।
+            </p>
+            <p>
+              स्वतंत्रता के बाद बिहार अनुसंधान और नीति-आधारित विकास में पिछड़ गया।
+              इसी कमी को पूरा करने के लिए “थिंक बिहार रिसर्च फाउंडेशन” का गठन किया गया, 
+              जो अनुसंधान आधारित नीतियों के माध्यम से बिहार के पुनर्निर्माण की दिशा में कार्यरत है।
+            </p>
+            <p>
+              यह संस्था शिक्षाविदों, प्रोफेसरों, शोधकर्ताओं, चिकित्सकों, कलाकारों, वैज्ञानिकों,
+              तकनीकी विशेषज्ञों, पत्रकारों और चिंतकों को एक मंच पर जोड़कर 
+              “विकसित बिहार, समृद्ध बिहार” के लक्ष्य को साकार करने हेतु निरंतर प्रयासरत है।
             </p>
           </div>
-        </div>
+        </section>
 
-        {/* Vision Section */}
-        <div className="mb-16">
-          <div className="card">
-            <h2 className="text-3xl font-bold text-secondary mb-6">Our Vision</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              An equitable, informed, and resilient society where every person — regardless of gender, caste, 
-              religion, or location — has access to quality education, meaningful livelihood opportunities, 
-              and the support systems necessary to thrive.
-            </p>
-          </div>
-        </div>
+        {/* Objectives */}
+        <section className="mb-20 bg-white rounded-3xl shadow-md p-10 border-l-4 border-secondary">
+          <h2 className="text-3xl font-bold text-secondary mb-8 border-b pb-2">
+            मुख्य कार्यक्षेत्र
+          </h2>
+          <ul className="list-decimal list-inside space-y-3 text-lg text-gray-800 leading-relaxed">
+            <li>बिहार अध्ययन केन्द्रों के माध्यम से विश्वविद्यालयों एवं महाविद्यालयों में अकादमिक संवाद और संगोष्ठियों का आयोजन।</li>
+            <li>बिहार के विभूतियों की जयंती पर कार्यक्रमों का आयोजन।</li>
+            <li>कला, संस्कृति और भाषाओं के संरक्षण एवं प्रोत्साहन हेतु कार्य।</li>
+            <li>बिहार के पर्यटन उद्योग को बढ़ावा देने के लिए योजनाएँ।</li>
+            <li>नीतिगत शोध और विकासपरक रिपोर्ट तैयार करना।</li>
+            <li>युवाओं के कौशल विकास हेतु प्रशिक्षण कार्यक्रम।</li>
+            <li>शिक्षा में गुणात्मक सुधार के लिए सतत प्रयास।</li>
+            <li>सामाजिक समरसता एवं जातिवाद के उन्मूलन के लिए अभियान।</li>
+            <li>आर्थिक विकास हेतु अनुसंधान-आधारित नीतिगत परिवर्तन।</li>
+            <li>बिहार की समृद्ध विरासत और खोई हुई गरिमा की पुनर्स्थापना हेतु विमर्श को आगे बढ़ाना।</li>
+          </ul>
+        </section>
 
-        {/* NEP 2020 Alignment */}
-        <div className="mb-16">
-          <div className="card">
-            <h2 className="text-3xl font-bold text-accent mb-6">Alignment with NEP 2020</h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              ThinkBihar Research Foundation is committed to supporting the National Education Policy 2020 
-              through our comprehensive approach to education and research development.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Multidisciplinary Approach</h3>
-                <p className="text-gray-700">
-                  Promoting interdisciplinary learning and research that breaks down silos between subjects 
-                  and encourages holistic understanding.
-                </p>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Inclusive Education</h3>
-                <p className="text-gray-700">
-                  Ensuring educational opportunities reach all sections of society, with special focus on 
-                  marginalized communities and rural areas.
-                </p>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Skill-Based Learning</h3>
-                <p className="text-gray-700">
-                  Emphasizing practical skills and vocational training alongside academic excellence to 
-                  prepare students for the modern workforce.
-                </p>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Research Excellence</h3>
-                <p className="text-gray-700">
-                  Fostering a culture of research and innovation at all levels of education, from grassroots 
-                  to advanced academic institutions.
-                </p>
-              </div>
+        {/* Values */}
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="text-center bg-white shadow-md rounded-2xl p-8 hover:shadow-xl transition">
+            <div className="bg-primary text-white w-16 h-16 flex items-center justify-center rounded-full mx-auto mb-4 text-3xl">
+              🌾
             </div>
+            <h3 className="text-2xl font-semibold mb-2">गौरव</h3>
+            <p className="text-gray-700 text-lg">
+              बिहार की ऐतिहासिक और सांस्कृतिक गरिमा को पुनः स्थापित करना।
+            </p>
           </div>
-        </div>
 
-        {/* Values Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="text-center">
-            <div className="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl">🎯</span>
+          <div className="text-center bg-white shadow-md rounded-2xl p-8 hover:shadow-xl transition">
+            <div className="bg-secondary text-white w-16 h-16 flex items-center justify-center rounded-full mx-auto mb-4 text-3xl">
+              🤝
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">Excellence</h3>
-            <p className="text-gray-600">
-              Striving for the highest standards in education, research, and community service.
+            <h3 className="text-2xl font-semibold mb-2">सहयोग</h3>
+            <p className="text-gray-700 text-lg">
+              शिक्षाविदों, विशेषज्ञों और समाज के विभिन्न वर्गों को एक मंच पर जोड़ना।
             </p>
           </div>
-          <div className="text-center">
-            <div className="bg-secondary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl">🤝</span>
+
+          <div className="text-center bg-white shadow-md rounded-2xl p-8 hover:shadow-xl transition">
+            <div className="bg-accent text-white w-16 h-16 flex items-center justify-center rounded-full mx-auto mb-4 text-3xl">
+              🚀
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">Collaboration</h3>
-            <p className="text-gray-600">
-              Building partnerships across institutions, communities, and sectors for greater impact.
+            <h3 className="text-2xl font-semibold mb-2">विकास</h3>
+            <p className="text-gray-700 text-lg">
+              अनुसंधान, शिक्षा और कौशल विकास के माध्यम से आत्मनिर्भर बिहार का निर्माण।
             </p>
           </div>
-          <div className="text-center">
-            <div className="bg-accent text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl">⚖️</span>
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">Equity</h3>
-            <p className="text-gray-600">
-              Ensuring equal opportunities and access to resources for all members of society.
-            </p>
-          </div>
-        </div>
+        </section>
+
       </div>
     </div>
-  )
+  );
 }

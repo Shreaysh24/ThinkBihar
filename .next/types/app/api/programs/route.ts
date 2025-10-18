@@ -1,4 +1,4 @@
-// File: S:\webDev\Bihar\app\api\programs\route.js
+// File: S:\webDev\ThinkBihar\app\api\programs\route.js
 import * as entry from '../../../../../app/api/programs/route.js'
 import type { NextRequest } from 'next/server.js'
 

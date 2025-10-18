@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ['Inter', 'system-ui', 'sans-serif'],
+        noto: ['"Noto Serif Devanagari"', 'serif'],
+      },
       colors: {
         primary: '#1e40af',
         secondary: '#059669',
