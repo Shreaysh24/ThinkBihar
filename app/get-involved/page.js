@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import toast from 'react-hot-toast'
+import ScrollToTop from '../components/ScrollToTop'
 
 export default function GetInvolved() {
   const [formData, setFormData] = useState({
@@ -60,12 +61,12 @@ export default function GetInvolved() {
   }
 
   return (
-    <div className="py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="py-20 bg-gradient-to-b from-white to-gray-50 font-[Noto_Serif_Devanagari]">
+      <div className="max-w-6xl mx-auto px-6 md:px-12">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 mb-6">Get Involved</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <div className="text-center mb-20">
+          <h1 className="text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">Get Involved</h1>
+          <p className="text-2xl text-gray-700 font-medium max-w-3xl mx-auto leading-relaxed">
             Join us in building a stronger, more equitable future for Bihar. There are many ways to contribute to our mission.
           </p>
         </div>
@@ -225,6 +226,7 @@ export default function GetInvolved() {
           </div>
         </div>
       </div>
+      <ScrollToTop />
     </div>
   )
 }

@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import toast from 'react-hot-toast'
+import ScrollToTop from '../components/ScrollToTop'
 
 export default function Publications() {
   const [publications, setPublications] = useState([])
@@ -109,13 +110,13 @@ export default function Publications() {
   }
 
   return (
-    <div className="py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="py-20 bg-gradient-to-b from-white to-gray-50 font-[Noto_Serif_Devanagari]">
+      <div className="max-w-6xl mx-auto px-6 md:px-12">
         {/* Header */}
-        <div className="flex justify-between items-center mb-12">
+        <div className="flex justify-between items-center mb-20">
           <div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">Publications</h1>
-            <p className="text-xl text-gray-600">
+            <h1 className="text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">Publications</h1>
+            <p className="text-2xl text-gray-700 font-medium leading-relaxed">
               Access our research publications and knowledge resources
             </p>
           </div>
@@ -236,6 +237,7 @@ export default function Publications() {
           </div>
         )}
       </div>
+      <ScrollToTop />
     </div>
   )
 }

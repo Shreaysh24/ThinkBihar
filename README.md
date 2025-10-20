@@ -24,11 +24,10 @@ A complete, production-ready website for ThinkBihar Research Foundation built wi
 
 1. **Home** (`/`) - Hero section with mission statement and focus areas
 2. **About** (`/about`) - Mission, vision, and NEP 2020 alignment
-3. **What We Do** (`/what-we-do`) - Four major focus areas with detailed descriptions
-4. **Programs** (`/programs`) - Dynamic programs display with category filtering
-5. **Publications** (`/publications`) - PDF upload and display functionality
-6. **Get Involved** (`/get-involved`) - Volunteer/partner application form
-7. **Contact** (`/contact`) - Contact form and information
+3. **Programs** (`/programs`) - Dynamic programs display with category filtering
+4. **Publications** (`/publications`) - PDF upload and display functionality
+5. **Get Involved** (`/get-involved`) - Volunteer/partner application form
+6. **Contact** (`/contact`) - Contact form and information
 
 ## Setup Instructions
 

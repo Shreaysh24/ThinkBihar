@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import ScrollToTop from './components/ScrollToTop'
 
 export default function Home() {
   const quickCards = [
@@ -25,27 +26,45 @@ export default function Home() {
   ]
 
   return (
-    <div>
+    <div className="bg-gradient-to-b from-white to-gray-50 font-[Noto_Serif_Devanagari]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-accent text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            ThinkBihar Research Foundation
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto">
-            Building education and research from the grassroots to the global — empowering communities, 
-            strengthening institutions, nurturing ideas.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/about" className="btn-primary bg-white text-primary hover:bg-gray-100">
-              Learn More
-            </Link>
-            <Link href="/get-involved" className="btn-secondary">
-              Join Us
-            </Link>
+      <section className="relative  bg-gray-50 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+          {/* Left Side Image */}
+          <div className="relative w-full h-80 md:h-[500px] rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="/logo.png"
+              alt="ThinkBihar"
+              className="object-contain object-center w-full h-full bg-white/40 backdrop-blur-sm"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/60 to-transparent md:to-white/0"></div>
           </div>
+
+          {/* Right Side Content */}
+          <div className="text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+              ThinkBihar <br /> Research Foundation
+            </h1>
+
+            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-lg">
+              Building education and research from the grassroots to the global —
+              empowering communities, strengthening institutions, and nurturing ideas.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <Link href="/about" className="btn-primary bg-primary text-white hover:bg-blue-700">
+                Learn More
+              </Link>
+              <Link href="/get-involved" className="btn-secondary bg-gray-900 text-white hover:bg-gray-800">
+                Join Us
+              </Link>
+            </div>
+          </div>
+
         </div>
       </section>
+
 
       {/* Quick Cards Section */}
       <section className="py-16 bg-gray-50">
@@ -82,6 +101,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <ScrollToTop />
     </div>
   )
 }
